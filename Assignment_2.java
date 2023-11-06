@@ -1,6 +1,7 @@
 import java.util.PriorityQueue;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 class HuffmanNode implements Comparable<HuffmanNode> {
     Character data;
@@ -100,7 +101,11 @@ public class HuffmanCoding {
     }
 
     public static void main(String[] args) {
-        String data = "this is an example for huffman encoding";
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the data to encode: ");
+        String data = scanner.nextLine();
+        scanner.close();
+
         String encodedData = huffmanEncoding(data);
         System.out.println("Original data: " + data);
         System.out.println("Encoded data: " + encodedData);
