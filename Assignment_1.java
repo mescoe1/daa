@@ -19,11 +19,11 @@ public class FibonacciIterative {
         System.out.println("Enter the Number : ");
         int n = sc.nextInt();
         long startTime = System.nanoTime();
-        System.out.println( startTime);
+        //System.out.println( startTime);
         int result = fibonacci(n);
         long endTime = System.nanoTime();
 
-        System.out.println(endTime);
+        //System.out.println(endTime);
 
 
         long timeElapsed = endTime - startTime;
